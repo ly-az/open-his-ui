@@ -28,21 +28,21 @@ Vue.prototype.addDateRange = addDateRange
 Vue.prototype.selectDictLabel = selectDictLabel
 Vue.prototype.getDataByType = getDataByType // 加载全局的根据字典类型查询字典的方法[基本每个页面都要使用]
 // 挂载全局消息框
-Vue.prototype.msgSuccess = function (msg) {
+Vue.prototype.msgSuccess = function(msg) {
   this.$message({
     showClose: true,
     message: msg,
     type: 'success'
   })
 }
-Vue.prototype.msgError = function (msg) {
+Vue.prototype.msgError = function(msg) {
   this.$message({
     showClose: true,
     message: msg,
     type: 'error'
   })
 }
-Vue.prototype.msgInfo = function (msg) {
+Vue.prototype.msgInfo = function(msg) {
   this.$message.info(msg)
 }
 Vue.use(Element, {

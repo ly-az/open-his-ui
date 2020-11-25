@@ -38,9 +38,10 @@ module.exports = {
     },
     // before: require('./mock/mock-server.js')
     // 跨域代理配置
+    // 后端服务地址
     proxy: {
       [ process.env.VUE_APP_BASE_API ]: {
-        target: 'http://127.0.0.1:18080/', //后端服务地址
+        target: 'http://127.0.0.1:18080/',
         changeOrigin: true,
         pathRewrite: {
           ['^' + process.env.VUE_APP_BASE_API]: ''
