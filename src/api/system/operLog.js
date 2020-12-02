@@ -3,7 +3,7 @@ import request from '@/utils/request'
 // 分页查询
 export function listForPage(query) {
   return request({
-    url: '/system/operlog/listForPage',
+    url: '/system/operLog/listForPage',
     method: 'get',
     params: query
   })
