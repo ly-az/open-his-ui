@@ -216,7 +216,7 @@ export default ({
     },
     // 多选框选中数据
     handleSelectionChange(selection) {
-      this.ids = selection.map(item => item.infoId)
+      this.ids = selection.map(item => item.operId)
       this.multiple = !selection.length
     },
     // 查询
