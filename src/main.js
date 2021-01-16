@@ -17,7 +17,8 @@ import * as filters from './filters' // global filters
 import {
   resetForm,
   addDateRange,
-  selectDictLabel
+  selectDictLabel,
+  handleTree
 } from '@/utils/his-utils'
 import {
   getDataByType
@@ -27,6 +28,7 @@ Vue.prototype.resetForm = resetForm
 Vue.prototype.addDateRange = addDateRange
 Vue.prototype.selectDictLabel = selectDictLabel
 Vue.prototype.getDataByType = getDataByType // 加载全局的根据字典类型查询字典的方法[基本每个页面都要使用]
+Vue.prototype.handleTree = handleTree // 加载全局的构造树的数据对象
 // 挂载全局消息框
 Vue.prototype.msgSuccess = function(msg) {
   this.$message({
