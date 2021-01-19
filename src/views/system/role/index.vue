@@ -369,7 +369,7 @@ export default {
       selectMenuTree().then(res => {
         this.menuOptions = this.handleTree(res.data, 'menuId')
       })
-      // 根据角色ID查询当前角色拥有的哪些菜单权限y
+      // 根据角色ID查询当前角色拥有的哪些菜单权限
       getMenuIdsByRoleId(this.currentRoleId).then(res => {
         this.$refs.menu.setCheckedKeys(res.data)
       })
@@ -397,4 +397,3 @@ export default {
   }
 }
 </script>
-
